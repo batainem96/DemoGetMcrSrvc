@@ -27,4 +27,8 @@ public class EmployeeRecord {
         this.dept = dept;
     }
 
+    public EmployeeRecord(String empId) {
+        this.empId = empId;
+    }
+
 }
