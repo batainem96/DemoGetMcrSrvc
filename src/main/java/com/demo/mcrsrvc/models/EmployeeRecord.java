@@ -15,6 +15,7 @@ public class EmployeeRecord {
     private String dept;
 
     public EmployeeRecord(String empId, String firstName, String lastName, String dept) {
+        super();
         this.empId = empId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -22,12 +23,14 @@ public class EmployeeRecord {
     }
 
     public EmployeeRecord(String firstName, String lastName, String dept) {
+        super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.dept = dept;
     }
 
     public EmployeeRecord(String empId) {
+        super();
         this.empId = empId;
     }
 
