@@ -19,7 +19,6 @@ public class GetController {
     @GetMapping
     @ResponseBody
     public EmployeeRecord getRecordById(@RequestParam String empId) {
-
         return recordsService.getRecordByEmpId(empId);
     }
 
