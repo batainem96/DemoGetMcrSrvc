@@ -1,0 +1,1 @@
+2022-04-07 15:53:18,123 | INFO | [LoggerAspect] GetController.getRecordById returned EmployeeRecord(empId=123, firstName=John, lastName=Doe, dept=IT) with input arg(s): [123]
