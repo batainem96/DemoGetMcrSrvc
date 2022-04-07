@@ -1,8 +1,8 @@
 package com.demo.mcrsrvc.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import com.demo.mcrsrvc.models.EmployeeRecord;
 import com.demo.mcrsrvc.services.RecordsService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,7 +17,6 @@ public class GetController {
     }
 
     @GetMapping
-    @ResponseBody
     public EmployeeRecord getRecordById(@RequestParam String empId) {
         return recordsService.getRecordByEmpId(empId);
     }

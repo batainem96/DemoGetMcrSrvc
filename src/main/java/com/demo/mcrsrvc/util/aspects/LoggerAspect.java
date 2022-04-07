@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 @Aspect
 @Component
-public class AspectLogger {
+public class LoggerAspect {
 
         private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
