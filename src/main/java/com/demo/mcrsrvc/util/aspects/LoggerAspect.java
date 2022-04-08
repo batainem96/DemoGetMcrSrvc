@@ -17,14 +17,6 @@ public class LoggerAspect {
         @Pointcut("within(com.demo.mcrsrvc.controllers..*)")
         public void logAll() {}
 
-//        @Before("logAll()")
-//        public void logMethodStart(JoinPoint jp) {
-//            String methodSig = extractMethodSignature(jp);
-//            String argStr = Arrays.toString(jp.getArgs());
-//            logger.info("{} invoked at {}", methodSig, LocalDateTime.now());
-//            logger.info("Input arguments: {}", argStr);
-//        }
-
         @AfterReturning(pointcut = "logAll()", returning = "returnedObj")
         public void logMethodReturn(JoinPoint jp, Object returnedObj) {
             String methodSig = extractMethodSignature(jp);
